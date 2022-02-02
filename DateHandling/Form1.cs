@@ -20,6 +20,9 @@ namespace DateHandling
         private void btnCalculateDueDays_Click(object sender, System.EventArgs e)
         {
             // TODO: Add code to calculate the days until due date
+            DateTime futureDate = Convert.ToDateTime(txtFutureDate.Text);
+            DateTime birthDate = Convert.ToDateTime(txtBirthDate.Text);
+            int days = futureDate.Subtract(birthDate).Days;
         }
 
         private void btnCalculateAge_Click(object sender, System.EventArgs e)
