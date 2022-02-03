@@ -23,11 +23,13 @@ namespace DateHandling
             DateTime currentDate = DateTime.Today;
             DateTime futureDate = Convert.ToDateTime(txtFutureDate.Text);
             int days = futureDate.Subtract(currentDate).Days;
-            StringBuilder sb = new StringBuilder();
-            sb.Append($"Current date   :\t{currentDate:d}\n\n");
-            sb.Append($"Future date    :\t{futureDate:d}\n\n");
-            sb.Append($"Days until due :\t{days}\n\n");
-            MessageBox.Show(sb.ToString(), "Due Days Calculateion");
+
+            string message = string.Empty;
+            message += $"Current date:\t{currentDate:d}\n\n";
+            message += $"Future date: \t{futureDate:d}\n\n";
+            message += $"Days until due :\t{days}\n\n";
+
+            MessageBox.Show(message, "Due Days Calculateion");
         }
 
         private void btnCalculateAge_Click(object sender, System.EventArgs e)
