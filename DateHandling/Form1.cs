@@ -22,10 +22,13 @@ namespace DateHandling
         {
             // TODO: Add code to calculate the days until due date
             DateTime currentDate = DateTime.Today;
-            DateTime birthDate = DateTime.Parse(txtBirthDate.Text,
-                                                CultureInfo.CurrentCulture,
-                                                DateTimeStyles.AssumeLocal);
-            int days = currentDate.Subtract(birthDate).Days;
+            DateTime futureDate = Convert.ToDateTime(txtFutureDate.Text);
+            int days = futureDate.Subtract(currentDate).Days;
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"Current date   :\t{currentDate:d}\n\n");
+            sb.Append($"Future date    :\t{futureDate:d}\n\n");
+            sb.Append($"Days until due :\t{days}\n\n");
+            MessageBox.Show(sb.ToString(), "Due Days Calculateion");
         }
 
         private void btnCalculateAge_Click(object sender, System.EventArgs e)
