@@ -43,7 +43,7 @@ namespace DateHandling
             StringBuilder sb = new StringBuilder();
             sb.Append($"Current Date:\t {currentDate.ToString("d")}\n\n");
             sb.Append($"Birth Date  :\t {birthDate.ToString("d")}\n\n");
-            sb.Append($"Age         :\t\t {years}");
+            sb.Append($"Age         :\t {years}");
             MessageBox.Show(sb.ToString(), "Age Calculation");
         }
 

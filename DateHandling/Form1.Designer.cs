@@ -75,7 +75,7 @@
             this.txtBirthDate.Name = "txtBirthDate";
             this.txtBirthDate.Size = new System.Drawing.Size(96, 23);
             this.txtBirthDate.TabIndex = 9;
-            this.txtBirthDate.Text = "10/24/52";
+            this.txtBirthDate.Text = "8/27/57";
             // 
             // txtFutureDate
             // 
@@ -84,7 +84,7 @@
             this.txtFutureDate.Name = "txtFutureDate";
             this.txtFutureDate.Size = new System.Drawing.Size(96, 23);
             this.txtFutureDate.TabIndex = 5;
-            this.txtFutureDate.Text = "12/31/2020";
+            this.txtFutureDate.Text = "12/31/2022";
             // 
             // label2
             // 
