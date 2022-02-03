@@ -22,7 +22,7 @@ namespace DateHandling
             // TODO: Add code to calculate the days until due date
             DateTime currentDate = DateTime.Today;
             DateTime futureDate = Convert.ToDateTime(txtFutureDate.Text);
-            int days = currentDate.Subtract(futureDate).Days;
+            int days = futureDate.Subtract(currentDate).Days;
             StringBuilder sb = new StringBuilder();
             sb.Append($"Current date   :\t{currentDate:d}\n\n");
             sb.Append($"Future date    :\t{futureDate:d}\n\n");
